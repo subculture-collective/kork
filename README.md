@@ -61,8 +61,15 @@ password-reset links are printed in the server log. Add your email to
 `ZELDA_ADMIN_EMAILS` to make your account an admin.
 
 For editor work, run `cd web && npm run dev` next to `make run`; Vite proxies
-API calls to :8080. `scripts/seed-demo.sh http://localhost:8080 server.log`
-creates a verified demo account with a published page.
+API calls to :8080.
+
+To create a verified demo account with a published page, start the server with
+the publish wait turned off and its log saved, then run the seed script:
+
+```bash
+ZELDA_PUBLISH_MIN_ACCOUNT_AGE=0 make run 2>&1 | tee server.log
+scripts/seed-demo.sh http://localhost:8080 server.log
+```
 
 Tests and checks:
 
