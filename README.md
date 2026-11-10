@@ -139,10 +139,12 @@ them with `make icons`.
 
 ## Contributing
 
-Open a pull request on GitHub against `main`. CI checks Go formatting and
-`go vet`, scans Go modules with govulncheck and the editor with `npm audit`,
-runs the editor typecheck and tests, runs all Go tests with the race detector
-against PostgreSQL, and builds the server.
+- Bugs and feature requests: [GitHub issues](https://github.com/subculture-collective/kork/issues).
+- Questions and ideas: [GitHub Discussions](https://github.com/subculture-collective/kork/discussions).
+- Code: open a pull request on GitHub against `main`. CI checks Go formatting
+  and `go vet`, scans Go modules with govulncheck and the editor with
+  `npm audit`, runs the editor typecheck and tests, runs all Go tests with the
+  race detector against PostgreSQL, and builds the server.
 
 ## License
 
